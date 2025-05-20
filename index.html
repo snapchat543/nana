@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrez votre numéro</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f5f5f7;
+    }
+    header {
+      background-color: #1c1c1e;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #3a3a3c;
+    }
+    header nav a {
+      color: #f5f5f7;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+    }
+    select, input, button {
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #0071e3;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" height="25">
+    <nav>
+      <a href="#">Produits</a>
+      <a href="#">Assistance</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Entrez numéro 1</h1>
+    <form action="Traitement.html" method="GET">
+      <label for="countryCode">Choisissez votre code de pays :</label>
+      <select id="countryCode" name="countryCode" required>
+        <option value="+33">France (+33)</option>
+        <option value="+32">Belgique (+32)</option>
+        <option value="+1">Canada (+1)</option>
+        <option value="+1">États-Unis (+1)</option>
+        <option value="+39">Italie (+39)</option>
+        <option value="+34">Espagne (+34)</option>
+        <option value="+49">Allemagne (+49)</option>
+        <option value="+44">Royaume-Uni (+44)</option>
+      </select>
+      <label for="phoneNumber">Entrez votre numéro de téléphone :</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Entrez votre numéro" pattern="[0-9]{9}" required>
+      <button type="submit">Continuer</button>
+    </form>
+  </main>
+<h1>Entrez numéro 2 </h1>
+    <form action="Traitement1.html" method="GET">
+      <label for="countryCode">Choisissez votre code de pays :</label>
+      <select id="countryCode" name="countryCode" required>
+        <option value="+33">France (+33)</option>
+        <option value="+32">Belgique (+32)</option>
+        <option value="+1">Canada (+1)</option>
+        <option value="+1">États-Unis (+1)</option>
+        <option value="+39">Italie (+39)</option>
+        <option value="+34">Espagne (+34)</option>
+        <option value="+49">Allemagne (+49)</option>
+        <option value="+44">Royaume-Uni (+44)</option>
+      </select>
+      <label for="phoneNumber">Entrez votre numéro de téléphone :</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Entrez votre numéro" pattern="[0-9]{9}" required>
+      <button type="submit">Continuer</button>
+    </form>
+  </main>
+</body>
+</html>
